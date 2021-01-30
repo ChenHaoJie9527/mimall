@@ -1,5 +1,8 @@
 <template>
-  <div class="box" @click="onAlert">新年快乐，恭喜发财！</div>
+  <div class="box" @click.self="onAlert">
+    <span>新年快乐，恭喜发财！</span>
+    <p>aaaaaaaaaaaaa</p>
+  </div>
 </template>
 
 <script>
@@ -20,5 +23,6 @@ export default {
 @import "./assets/scss/mixin.scss";
 .box {
   color: $colors;
+  border: 1px solid #ccc;
 }
 </style>

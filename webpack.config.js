@@ -41,6 +41,11 @@ module.exports = {
                 loader: 'babel-loader'
             }
         ]
+    },
+    devServer: {
+        contentBase: path.resolve(__dirname, "./dist"),
+        port: 8080,
+        compress: true
     }
 
 }
