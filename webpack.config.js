@@ -38,7 +38,8 @@ module.exports = {
             {
                 test: /\.js$/,
                 exclude: /node_modules/, // 不编译node_modules下的文件
-                loader: 'babel-loader'
+                loader: 'babel-loader',
+                include: path.resolve(__dirname, "src")
             }
         ]
     },
